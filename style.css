@@ -1,0 +1,91 @@
+/* Definição das cores da Even3 */
+:root {
+  --azul-escuro: #091F2F;
+  --azul-claro: #288BE4;
+  --black-pearl: #061622;
+  --elephant: #0C2639;
+  --wedgewood: #45789C;
+  --dodger-blue: #51ACFF;
+  --mid-gray: #58585B;
+  --alto: #D2D2D2;
+  --mercury: #E0E0E0;
+  --concrete: #F2F2F2;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--concrete);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: var(--azul-claro);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-window {
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--alto);
+}
+
+.chat-message {
+  margin: 10px 0;
+}
+
+.user {
+  text-align: right;
+  color: var(--azul-claro);
+}
+
+.bot {
+  text-align: left;
+  color: var(--elephant);
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: var(--mercury);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--alto);
+  border-radius: 4px;
+  background: white;
+}
+
+.chat-input button {
+  background: var(--azul-claro);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: var(--dodger-blue);
+}
