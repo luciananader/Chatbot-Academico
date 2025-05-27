@@ -31,6 +31,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .chat-header {
@@ -88,4 +89,64 @@ body {
 
 .chat-input button:hover {
   background: var(--dodger-blue);
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-top: 15px;
+  
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+.texto-Even1{
+    background: var(--concrete);
+    color: #091F2F;
+    font-size: 30px;
+    text-align: center;
+}
+
+.texto-Even2{
+    background: var(--concrete);
+    color: #091F2F;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto-Even{
+    background: var(--concrete);
+
+}
+
+.even3-footer {
+  background-color: var(--concrete);
+  color: var(--mid-gray); 
+  text-align: center;
+  padding: 6px 0;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-logo-small {
+  height: 13px;
+  margin-bottom: 5px;
+}
+
+.footer-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 10px;
 }
